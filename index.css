@@ -1,0 +1,46 @@
+#main-doc {
+    display:flex;
+    flex-direction: row;
+    
+
+}
+#navbar {
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    border: 4px solid grey;
+    justify-content:space-between;
+    
+}
+.sectio{
+    margin-left:10px;
+    width: 100%;
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+    border: 4px solid grey;
+    justify-content:space-between;
+    
+
+}
+h1{
+    font-size: 14px;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    height:30px;
+    text-align:center;
+    background-color: darkslategrey;
+    color:white;
+    left:0;
+    bottom: 0;
+}
+a:visited {color: black;}
+
+@media screen {
+    * {font-family: sans-serif;}
+  }
+
+h3 {text-align: center;}

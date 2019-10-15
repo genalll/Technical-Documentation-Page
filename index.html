@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <main id="main-doc">
+
+        <nav id="navbar">
+                <header><h1>Cтраница технической документации</h1></header>
+                 <a class="nav-link" href="#Описание"> Описание</a>
+                 <a class="nav-link" href="#Требования"> Требования</a>
+                 <a class="nav-link" href="#Код"> Код</a>
+                 <a class="nav-link" href="#Анализ"> Анализ</a>
+                 <a class="nav-link" href="#Результат"> Результат</a>
+
+        </nav>
+        <div class="sectio">
+        <section class="main-section" id="Описание">
+                <header><h3>Описание</h3></header>
+                <p>Цель создать приложение максимально похожее на <a href="https://codepen.io/freeCodeCamp/full/NdrKKL">это</a>.</p>
+
+        </section>
+        
+        
+        
+        <section class="main-section" id="Требования">
+                <header><h3>Требования</h3></header>
+                <p>     я вижу основной элемент с соответствующим id  'main-doc', который содержит основное содержание страницы (техническая документация).</p>
+                        
+                
+                <p>В элементе # main-doc я вижу несколько элементов section, каждый со своим классом main-section. Там должно быть минимум 5.</p>
+
+                        <p>первый элемент в каждом .main-разделе должен быть элементом заголовка, который содержит текст, описывающий тему этого раздела.</p>
+
+                        <p>Каждый элемент section с классом main-section также должен иметь идентификатор, соответствующий тексту каждого заголовка, содержащегося в нем.
+                        <br> Любые пробелы должны быть заменены подчеркиванием (например, раздел, содержащий заголовок «Javascript и Java», должен иметь соответствующий id  'Javascript_and_Java').</p>
+
+                        <p>элементы .main-section должны содержать не менее 10 элементов p (не каждый).</p>
+
+                        <p>элементы .main-section должны содержать как минимум 5 элементов кода (не каждый).</p>
+
+                        <p>элементы .main-section должны содержать как минимум 5 элементов li (не каждый).</p>
+                        
+                        <p>я вижу элемент nav с соответствующим id  'navbar'.</p>
+                        
+                        <p>элемент navbar должен содержать один элемент header, который содержит текст, описывающий тему технической документации.
+                        Кроме того, панель навигации должна содержать элементы link (a) с классом nav-link. Должен быть один для каждого элемента с классом main-section.
+                        элемент заголовка в панели навигации должен находиться перед любыми элементами ссылки (а) в панели навигации.</p>
+
+                        <p>Каждый элемент с классом nav-link должен содержать текст, соответствующий тексту заголовка в каждом разделе (например, если у вас есть раздел /  
+                        <br>заголовок «Hello world», ваша панель навигации должна иметь элемент, который содержит текст 'Привет, мир').</p>
+
+                        <p>Когда я нажимаю на элемент navbar, страница должна перейти к соответствующему разделу элемента main-doc (например, если я нажимаю на элемент nav-link,
+                        <br> содержащий текст «Hello world», страница перемещается к элементу раздела, который имеет этот идентификатор и содержит соответствующий заголовок.</p>
+
+                        <p>На устройствах обычного размера (ноутбуки, настольные компьютеры) элемент с id  'navbar' должен отображаться в левой части экрана и всегда должен быть видимым для пользователя.
+                        На моей странице технической документации должен использоваться хотя бы один медиазапрос.</p>
+
+                
+
+        </section>
+        
+        
+        
+        
+        
+        
+        <section class="main-section" id="Код">
+                <header><h3>Код</h3></header>
+                <ul>
+                    <h3>Это делается так:<h3>
+                    <li><code>
+                            #main-doc {
+                                display:flex;
+                                flex-direction: row;
+                                
+                            
+                            }
+                    </code></li>
+                    <li><code>
+                            #navbar {
+                                display:flex;
+                                flex-direction: column;
+                                padding:20px;
+                                border: 4px solid grey;
+                                justify-content:space-between;
+                                
+                            }
+
+                    </code></li>
+                    <li><code>
+                            .sectio{
+                                margin-left:10px;
+                                width: 100%;
+                                padding: 40px;
+                                display:flex;
+                                flex-direction: column;
+                                border: 4px solid grey;
+                                justify-content:space-between;
+                                
+                            
+                            }
+                    </code></li>
+                    <li><code>
+                            footer{
+                                position: fixed;
+                                width: 100%;
+                                height:30px;
+                                text-align:center;
+                                background-color: darkslategrey;
+                                color:white;
+                                left:0;
+                                bottom: 0;
+                            }
+                    </code></li>
+                    <li><code>
+                            a:visited {color: black;}
+
+                            @media screen {
+                                * {font-family: sans-serif;}
+                              }
+                            
+                            h3 {text-align: center;}
+                    </code></li>
+                    
+                <ul>
+
+        </section>
+        
+        
+        
+        
+        <section class="main-section" id="Анализ">
+                <header><h3>Анализ</h3></header>
+                <p>Код для проверки скрипт <a href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js </a></p>
+        </section>
+        
+        
+        
+        
+        <section class="main-section" id="Результат">
+                <header><h3>Результат</h3></header>
+                <h4>Если справился, ты молодец.</h4>
+        </section>
+        </div>
+    </main>
+    <footer>Создано темной ночью, в торопях для <a href="https://learn.freecodecamp.org">freecodecamp.com в рамках обучения Responsive Web Design</a> </footer>
+</body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
